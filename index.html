@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="./css/style.css"
+        />
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="field" id="content">  
+            <div class="field-cell" id="form">
+                <div class="cell tabs">
+                    <div class="tabs_in" role="button">Sign in</div>
+                    <div class="tabs_up" role="button">Sign up</div>
+                </div>
+                <form class="field-form" name="Регистрация" method="post" >
+                    <div class="form form__cell">
+                        <legend class="cell__name">Email*</legend>
+                        <input class="form-input" type="email" id="email" size="100"  
+                        />
+                        <div class="error" id="email_error"></div> 
+                    </div>
+                    <div class="form form__cell">
+                        <legend class="cell__name">ФИО*</legend>
+                        <input class="form-input" type="text" id="fio" name="username" namesize="150" />
+                        <div class="error" id="fio_error"></div>
+                    </div>
+                    <div class="form__cell">
+                        <legend class="cell__name">Пароль*</legend>
+                        <input class="form-input" id="password" type="password" name="password"
+                        />
+                        <div class="error" id="password_error"></div>
+                    </div>
+                    <div class="form__cell">
+                        <legend class="cell__name">Подтвердите пароль*</legend>
+                        <input class="form-input" id="passrepeat" type="password" name="password"  
+                        />
+                        <div class="error" id="passrepeat_error"></div>
+                    </div>
+                    <div class="form__cell">
+                        <label class="check option">
+                            <input class="check__input"  id='check' type="checkbox" name="checkbox" />
+                            <span class="check__box"></span>
+                            <p class="check text">Я подтверждаю, что хочу зарегестрироваться*</p>
+                        </label>
+                        <div class="error" id="check_error"></div>
+                    </div>              
+                    <div class="form button">
+                        <p><button class="button-submit"><p class="button-submit__name">Sign Up</p></button></p>
+                    </div>
+                </form>
+            </div>
+            <div class="button-soc">
+                <a class="soc soc-link" href="#">or Sign Up via</a>
+                <div class="bbt facebook" role="button">
+                    <img class="bbt-icon" src="./icon/Faacebook.svg">
+                    <span class="icon-name">Facebook</span>
+                </div>
+                <div class="bbt google" role="button">
+                    <img class="bbt-icon" src="./icon/gooogle.svg">
+                    <span class="icon-name">Google</span>
+                </div>
+                <p class="social-breadcrumbs">by clicking submit you agree to the <a class="soc-breadcrumbs link" href="#">Terms and Conditions</a></p>
+                <img class="breadcrumbs flower-icon" src="./image/flower.svg" width="136" />
+            </div>
+        </div>
+    </body>
+</html>

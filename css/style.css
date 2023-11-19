@@ -1,0 +1,250 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{  
+    background-image: url(../image/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#content{
+    max-width: 1024px;
+}
+
+.field{
+    width: 90%;
+    height: 556px;
+    background-color: #ffff;
+    margin: auto;
+    margin-top: 40px;
+    border: 35px solid #fab8cd;
+    border-radius: 77px;
+    display: flex;
+    
+}
+
+.field-cell{
+    width: 50%;
+    border-right: 1px solid #dee1e2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cell.tabs {
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    width: 50%;
+    padding: 15px 30px;
+    justify-content: space-between;
+
+    &>div {
+        cursor: pointer;
+    }
+}
+
+.tabs_up{
+    color: #5957BA;
+}
+
+.field-form{
+    margin: 0 40px 40px 40px;
+    margin-top: 50px;
+    
+}
+
+.form  .form__cell{
+    margin: 40px;
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+
+.form-input{
+    width: 256px;
+    height: 34px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #dee1e2;
+}
+
+.form-input:focus {
+    background-color: rgba(228, 240, 255, 1);
+    border-color: rgba(0, 122, 255, 1);
+}
+
+.form-cell__name{
+    font-weight: 400;
+    font-size: 13px;
+    color: #586870;
+}
+
+.option{
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.check{
+    padding-left: -1.2em;
+}
+
+.check__input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.check__box{
+    position: absolute;
+    margin-top: 0.2em;
+    margin-left: -1em;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 0.05em;
+    background-color: #ffff;
+    box-shadow: 0 0 0 0.1em #fab8cd;
+}
+.check.text{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.check__input:checked+.check__box{
+    background-color: #e26984;
+    background-image: url(./icon/check.svg);
+}
+
+.check__input:focus+.check__box{
+    box-shadow: 0 0 0 0.1em #fab8cd,
+    0 0 0 0.2em #e26984;
+}
+
+.form.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit{
+    width: 86px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(110, 108, 224, 0.3);
+    border: 1px solid;
+    border-radius: 7px;
+    border-color: #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.button-submit:hover {
+    background-color: #5957BA;
+}
+
+.button-submit__name{
+    margin-left: 7px;
+}
+
+.button-soc{
+    margin-top: 75px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.field .soc-link{
+    margin-left: 88px;
+    color: #586870;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.bbt.facebook{
+    width: 245px;
+    height: 37px;
+    border: 2px solid #5957BA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    align-items: center;
+    flex-direction: row;
+
+    &>div {
+        cursor: pointer;
+    }
+}
+
+
+.bbt.icon-name{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #5957BA;
+
+}
+
+.bbt.google{
+    width: 245px;
+    height: 37px;
+    border: 2px solid #5957BA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+
+    &>div {
+        cursor: pointer;
+    }
+}
+
+
+.social-breadcrumbs{
+    width: 157px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 10px;
+    color: #586870;
+    text-align: center;
+    margin-left: 45px;
+}
+
+.social-breadcrumbs.link{
+    color: #586870;
+}
+
+.breadcrumbs.flower-icon{
+    margin-left: 60px;
+
+}
+
+.error{
+    font-size: 10px;
+}
+
+
+.succeed{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    font-weight: 600;
+    font-size: 30px;
+    color:#ffff
+}
