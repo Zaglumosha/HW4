@@ -120,7 +120,7 @@ body{
 
 .check__input:checked+.check__box{
     background-color: #e26984;
-    background-image: url(./icon/check.svg);
+    background-image: url(../icon/check.svg);
 }
 
 .check__input:focus+.check__box{
